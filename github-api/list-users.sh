@@ -1,5 +1,14 @@
 #!/bin/bash
 
+#################
+# Author: Nagen Biswal
+# Date: 11 Jan 2025
+# Version: V1
+# This is to print the list of user who have an access to the repository.
+###################
+
+helper()
+
 # GitHub API URL
 API_URL="https://api.github.com"
 
@@ -33,6 +42,16 @@ function list_users_with_read_access {
     else
         echo "Users with read access to ${REPO_OWNER}/${REPO_NAME}:"
         echo "$collaborators"
+    fi
+}
+
+function helper{
+    ecpected_cmd_args=2
+    if [ $# -ne $expected_cmd_args ]; then
+        echo "Please execute the script with the proper mcd aruments"
+        echo "Example: ./your-script.sh arg1 arg2"
+        echo "Thanks"
+        exit 1
     fi
 }
 
