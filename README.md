@@ -8,7 +8,7 @@ This project demonstrates how to use **Amazon S3 Event Triggers** with **AWS Lam
 
 ## 🏢 Real-World Use Cases
 
-Many top companies use S3 event triggering to enhance their services:
+Many top companies use S3 event triggering to enhance their services: 
 
 - **Netflix**  
   Uses S3 event triggering to automatically process video files uploaded to S3, enabling seamless content ingestion and transformation pipelines.
